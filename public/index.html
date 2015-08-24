@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="a">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poller</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+    <!--<script src="/javascripts/clientapp.js"></script> -->
+</head>
+<body ng-controller="poll" >
+<div class="main">
+    <div class="container">
+        <h1 id="title">Poll-io</h1>
+        <h2 id="prompt">Ask anything you'd like.</h2>
+        <input ng-model="question" class="questionbox"  autofocus="autofocus" type="text">
+    </div>
+</div>
+<div class="bottom">
+    <button class="createpoll" ng-click="makePoll()"><p>Create Poll.</p></button>
+</div>
+</body>
+<script src="/javascripts/Client.js"></script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="a">
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+      <script src=""
+      <!--<script src="/javascripts/clientapp.js"></script> -->
+  </head>
+  <body>
+    <div class="main">
+          <div class="container">
+              <h1 id="title">Poll-io</h1>
+              <h2 id="prompt">Have a question? Lets find you an answer.</h2>
+              <input class="questionbox"  autofocus="autofocus" type="text">
+          </div>
+      </div>
+      <div ng-controller="c" class="bottom">
+          <h2>Welcome {[{name}]} to the world of Tutorialspoint!</h2>
+          <button class="createpoll" onclick="makePoll()"><p>Create Poll.</p></button>
+      </div>
+    <script src="/javascripts/Client.js"></script>
+  </body>
+</html>
